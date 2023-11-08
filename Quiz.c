@@ -243,6 +243,106 @@ void nivelMedio()
             break;
         }
     }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Quantos estados tem no Brasil?");
+        printf("1- 26\n");
+        printf("2- 27\n");
+        printf("3- 28\n");
+        printf("4- 29\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while(continuar)
+    {
+        printf("Quais o menor e o maior país do mundo?");
+        printf("1- Vaticano e Rússia\n");
+        printf("2- Nauru e China\n");
+        printf("3- Mônaco e Canadá\n");
+        printf("4- Malta e Estados Unidos\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while(continuar)
+    {
+        printf("Quanto tempo a luz do Sol demora para chegar à Terra?");
+        printf("1- 12 minutos\n");
+        printf("2- 1 dia\n");
+        printf("3- 12 horas\n");
+        printf("4- 8 minutos\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            pontuacao++;
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    printf("Sua pontuação foi: %d\n", pontuacao);
 }
 
 int main()
