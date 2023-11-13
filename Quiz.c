@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void nivelFacil()
-{ // Corrigido: Adicionados os parênteses
+{
     int pontuacao = 0;
     int resposta;
     int continuar = 1;
@@ -170,6 +170,7 @@ void nivelFacil()
         }
     }
     printf("Sua pontuação foi: %d\n", pontuacao);
+    system("pause");
 }
 
 void nivelMedio()
@@ -180,7 +181,7 @@ void nivelMedio()
     while (continuar)
     {
         system("clear");
-        printf("Qual é a capital do Canadá?");
+        printf("Qual é a capital do Canadá?\n");
         printf("1- Toronto\n");
         printf("2- Montreal\n");
         printf("3- Ottawa\n");
@@ -213,7 +214,8 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
-        printf("Quem escreveu a peça de teatro Romeu e Julieta?");
+        system("clear");
+        printf("Quem escreveu a peça de teatro Romeu e Julieta?\n");
         printf("1- William Shakespeare\n");
         printf("2- Machado de Assis\n");
         printf("3- Molière\n");
@@ -246,7 +248,8 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
-        printf("Quantos estados tem no Brasil?");
+        system("clear");
+        printf("Quantos estados tem no Brasil?\n");
         printf("1- 26\n");
         printf("2- 27\n");
         printf("3- 28\n");
@@ -279,7 +282,8 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
-        printf("Quais o menor e o maior país do mundo?");
+        system("clear");
+        printf("Quais o menor e o maior país do mundo?\n");
         printf("1- Vaticano e Rússia\n");
         printf("2- Nauru e China\n");
         printf("3- Mônaco e Canadá\n");
@@ -312,7 +316,8 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
-        printf("Quanto tempo a luz do Sol demora para chegar à Terra?");
+        system("clear");
+        printf("Quanto tempo a luz do Sol demora para chegar à Terra?\n");
         printf("1- 12 minutos\n");
         printf("2- 1 dia\n");
         printf("3- 12 horas\n");
@@ -343,6 +348,7 @@ void nivelMedio()
         }
     }
     printf("Sua pontuação foi: %d\n", pontuacao);
+    system("pause");
 }
 
 void niveldificil()
@@ -352,7 +358,8 @@ void niveldificil()
     int resposta;
     while (continuar)
     {
-        printf("Qual a obra de arte mais cara já arrematada em um leilão?");
+        system("clear");
+        printf("Qual a obra de arte mais cara já arrematada em um leilão?\n");
         printf("1- A Ronda Noturna, de Rembrandt\n");
         printf("2- Nº 5, de Jackson Pollock\n");
         printf("3- Os Jogadores de Cartas, de Paul Cézanne\n");
@@ -377,7 +384,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar();
             system("pause");
             break;
         }
@@ -385,7 +392,8 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
-        printf("Qual o nome do cientista que descobriu o processo de pasteurização e a vacina contra a raiva?");
+        system("clear");
+        printf("Qual o nome do cientista que descobriu o processo de pasteurização e a vacina contra a raiva?\n");
         printf("1- Louis Pasteur\n");
         printf("2- Marie Curie\n");
         printf("3- Charles Darwin\n");
@@ -410,7 +418,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar();
             system("pause");
             break;
         }
@@ -418,7 +426,8 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
-        printf(" Qual o país mais novo do mundo?");
+        system("clear");
+        printf(" Qual o país mais novo do mundo?\n");
         printf("1- Kosovo\n");
         printf("2- Palestina\n");
         printf("3- Sudão do Sul\n");
@@ -443,7 +452,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar();
             system("pause");
             break;
         }
@@ -451,7 +460,8 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
-        printf("Quem foi a primeira mulher a viajar para o espaço?");
+        system("clear");
+        printf("Quem foi a primeira mulher a viajar para o espaço?\n");
         printf("1- Valentina Tereshkova\n");
         printf("2- Svetlana Savitskaya\n");
         printf("3- Sally Ride\n");
@@ -476,7 +486,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar();
             system("pause");
             break;
         }
@@ -484,7 +494,8 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
-        printf("Qual foi a célebre invenção feita por Robert Kahn e Vint Cerf?");
+        system("clear");
+        printf("Qual foi a célebre invenção feita por Robert Kahn e Vint Cerf?\n");
         printf("1- O telefone\n");
         printf("2- A lâmpada\n");
         printf("3- A internet\n");
@@ -509,54 +520,57 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar();
             system("pause");
             break;
         }
     }
     printf("Sua pontuação foi: %d\n", pontuacao);
+    system("pause");
 }
 
 int main()
 {
     char opcao = 0;
-
+    char nome[50];
+    printf("Digite seu nome: ");
+    scanf("%49s", nome);
     while (1)
     {
-        system("clear"); // Aqui poderia haver um teste de retorno
+        system("clear");
         printf("\e[0;33mMENU PRINCIPAL\e[0m\n");
         printf("1 - Novo Quiz\n");
         printf("2 - Ver resultados anteriores\n");
         printf("0 - Sair\n");
         printf("Sua escolha => ");
-        scanf(" %c", &opcao); // Corrigido: Adicionado espaço para ignorar whitespaces
-        getchar();            // Pode ser problemático se o buffer tiver mais caracteres
+        scanf(" %c", &opcao);
+        getchar();
 
         switch (opcao)
         {
         case '1':
-            system("clear"); // Aqui poderia haver um teste de retorno
+            system("clear");
             printf("\e[0;33mNOVO QUIZ\e[0m\n");
             printf("1- Dificuldade Fácil\n");
             printf("2- Dificuldade Intermediária\n");
             printf("3- Dificuldade Difícil\n");
             printf("Escolha uma dificuldade ou digite 0 para voltar => ");
-            scanf(" %c", &opcao); // Corrigido: Adicionado espaço para ignorar whitespaces
-            getchar();            // Pode ser problemático se o buffer tiver mais caracteres
+            scanf(" %c", &opcao);
+            getchar();
 
             switch (opcao)
             {
             case '1':
                 nivelFacil();
-                break; // Corrigido: Adicionado ponto-e-vírgula e break
+                break;
             case '2':
                 nivelMedio();
-                break; // Corrigido: Adicionado break
+                break;
             case '3':
-                printf("Dificuldade Difícil\n");
-                break; // Corrigido: Adicionado break
+                niveldificil();
+                break;
             case '0':
-                break; // Corrigido: Adicionado break
+                break;
             default:
                 printf("Opção inválida!\n");
                 printf("Pressione ENTER para continuar...");
@@ -566,11 +580,11 @@ int main()
             break;
 
         case '2':
-            // Aqui deve ir o código para "Ver resultados anteriores"
+            // "Ver resultados anteriores"
             break;
 
         case '0':
-            return 0; // Encerra o programa
+            return 0;
 
         default:
             printf("\e[0;31mOpção inválida!\e[0m\n");
