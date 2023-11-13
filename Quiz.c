@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void nivelFacil()
+void nivelFacil(int *pontuacao)
 {
-    int pontuacao = 0;
     int resposta;
     int continuar = 1;
     while (continuar)
@@ -167,16 +166,21 @@ void nivelFacil()
         case 4:
             continuar = 0;
             break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            break;
         }
     }
-    printf("Sua pontuação foi: %d\n", pontuacao);
+    printf("\nQuiz Concluído!\n");                      // Indicates the end of the quiz
+    printf("Sua pontuação final foi: %d\n", pontuacao); // Displays the final score
     system("pause");
 }
 
-void nivelMedio()
+void nivelMedio(int *pontuacao)
 {
     int continuar = 1;
-    int pontuacao = 0;
     int resposta;
     while (continuar)
     {
@@ -347,14 +351,14 @@ void nivelMedio()
             break;
         }
     }
-    printf("Sua pontuação foi: %d\n", pontuacao);
+    printf("\nQuiz Concluído!\n");                      // Indicates the end of the quiz
+    printf("Sua pontuação final foi: %d\n", pontuacao); // Displays the final score
     system("pause");
 }
 
-void niveldificil()
+void niveldificil(int *pontuacao)
 {
     int continuar = 1;
-    int pontuacao = 0;
     int resposta;
     while (continuar)
     {
@@ -532,12 +536,13 @@ void niveldificil()
 int main()
 {
     char opcao = 0;
-    char nome[50];
-    printf("Digite seu nome: ");
-    scanf("%49s", nome);
     while (1)
     {
         system("clear");
+        char nome[50];
+        int pontuacao = 0;
+        printf("Digite seu nome: ");
+        scanf("%49s", nome);
         printf("\e[0;33mMENU PRINCIPAL\e[0m\n");
         printf("1 - Novo Quiz\n");
         printf("2 - Ver resultados anteriores\n");
@@ -561,13 +566,22 @@ int main()
             switch (opcao)
             {
             case '1':
-                nivelFacil();
+                nivelFacil(&pontuacao);
+                printf("\nQuiz Concluído!\n");                      // Indicates the end of the quiz
+                printf("Sua pontuação final foi: %d\n", pontuacao); // Displays the final score
+                system("pause");
                 break;
             case '2':
-                nivelMedio();
+                nivelMedio(&pontuacao);
+                printf("\nQuiz Concluído!\n");                      // Indicates the end of the quiz
+                printf("Sua pontuação final foi: %d\n", pontuacao); // Displays the final score
+                system("pause");
                 break;
             case '3':
-                niveldificil();
+                niveldificil(&pontuacao);
+                printf("\nQuiz Concluído!\n");                      // Indicates the end of the quiz
+                printf("Sua pontuação final foi: %d\n", pontuacao); // Displays the final score
+                system("pause");
                 break;
             case '0':
                 break;
